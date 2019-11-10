@@ -27,11 +27,11 @@ return [
     // 驱动方式
     'type' => 'redis',
     // 服务器地址
-    'host' => '127.0.0.1',
+    'host' => 'r-bp1bkjmryx2cp44clg.redis.rds.aliyuncs.com',
     // 密码
-    'password' => '',
+    'password' => 'r-bp1bkjmryx2cp44clg:Ew@GACBy07Yf',
     // 端口
-    'port' => '6379',
+    'port' => '26379',
     // 缓存保存目录
     'path' => './runtime/cache',
     // 全局缓存有效期（0为永久有效）

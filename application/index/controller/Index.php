@@ -101,7 +101,7 @@ class Index extends BasicApi
             if (!$sql) {
                 throw new Exception("无法读取data/pearproject.sql文件，请检查是否有读权限");
             }
-            $sql = str_replace("`pms_", "`{$mysqlPrefix}", $sql);
+            $sql = str_replace("`pear_", "`{$mysqlPrefix}", $sql);
             $pdo = new PDO("mysql:host={$mysqlHostname};port={$mysqlHostport}", $mysqlUsername, $mysqlPassword, array(
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
